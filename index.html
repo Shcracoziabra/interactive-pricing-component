@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <main>
+    <h1 class="pricing-title">Simple, traffic-based pricing</h1>
+    <p class="pricing-description">
+      <span>Sign-up for our 30-day trial.</span>
+      <span>No credit card required.</span>
+    </p>
+    <div class="pricing-card">
+      <div class="pricing-card__main">
+          <h2 class="pricing-card__title">
+            <span class="pricing-card__viewscount">100k</span>
+              pageviews
+          </h2>
+          <p class="pricing-card__pay">
+            <span class="pricing-card__price">$16.00</span>
+            / month
+          </p>
+        <div class="pricing-card__range-wrapper">
+          <input class="pricing-card__range" type="range" min="0" max="100" value="50" />
+        </div>
+        <div class="pricing-card__switch-wrapper">
+          <p class="pricing-card__billing">Monthly Billing</p>
+          <input id="pricing-card__switch" class="pricing-card__switch" type="checkbox">
+          <label for="pricing-card__switch"></label>
+          <label for="pricing-card__switch" hidden>turn on year billing</label>
+          <p id="discount" class="pricing-card__billing">
+            Yearly Billing
+          </p>
+        </div>
+      </div>
+      <div class="pricing-card__bottom">
+        <ul class="pricing-card__advantages">
+          <li class="pricing-card__advantage">Unlimited websites</li>
+          <li class="pricing-card__advantage">100% data ownership</li>
+          <li class="pricing-card__advantage">Email reports</li>
+        </ul>
+        <button class="pricing-card__btn">Start my trial</button>
+      </div>
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Shcracoziabra" target="_blank">Tetiana B.</a>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
