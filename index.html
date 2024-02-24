@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./index.css">
-  
+
   <title>Frontend Mentor | Interactive pricing component</title>
 </head>
 <body>
@@ -30,7 +30,8 @@
             / month
           </p>
         <div class="pricing-card__range-wrapper">
-          <input class="pricing-card__range" type="range" min="0" max="100" value="50" />
+          <input id="range" class="pricing-card__range" type="range" min="0" max="100" value="50" />
+          <label for="range" hidden>Views and prices range</label>
         </div>
         <div class="pricing-card__switch-wrapper">
           <p class="pricing-card__billing">Monthly Billing</p>
@@ -53,10 +54,10 @@
     </div>
   </main>
 
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/Shcracoziabra" target="_blank">Tetiana B.</a>
-  </div>
+  </footer>
   <script src="./index.js"></script>
 </body>
 </html>
